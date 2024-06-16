@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0; 
+}
+#navBar{
+    position: relative;
+    background:linear-gradient(to bottom, #28B83F, rgb(175, 238, 199));
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 20px  #28B83F;
+    height: 7vh;
+}
+#navBar h2{
+    margin-left: 15px;
+    padding: 2px;
+    color: white;
+    cursor: none;
+}
+#navBar ul{
+    display: flex;
+    gap: 20px;
+    float: left;
+    padding: 5px;
+    align-items: center;
+}
+#navBar ul li{
+    list-style: none;
+    padding: 5px 10px 5px 10px;
+    margin: 0 5px 0 10px;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 100px;
+    text-align: center;
+    transition: .5s;
+}
+#navBar ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+#navBar ul li:hover{
+    box-shadow: 0 2px 10px  #28B83F;
+    cursor: pointer;
+}
+
+#main{
+    height: 90vh;
+    background: linear-gradient(to left top, #71bd7e, white);
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+
+.leftSide{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    padding: 30px;
+}
+.content h1{
+    width: 100%;
+    text-align: center;
+    margin: 30px 0px;
+}
+.content p{
+    padding: 20px;
+    margin: 10px 0;
+}
+.btnGroup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    padding: 10px;
+    width: 200px;
+    height: auto;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: #28B83F;
+    color: white;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #28B83F;
+    transition: .8s ease-in;
+}
+.btn:hover{
+    box-shadow: none;
+}
+.btnAdmin{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.rightSide{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    vertical-align: bottom;
+    padding-right: 10px;
+
+}
+.rightSide img{
+    max-width: 100%;
+    max-height: 100%;
+    cursor: none;
+   
+}
+
+@media only screen and (max-width: 800px) {
+    #main{
+        display: block;
+        height: auto;
+    }
+    .rightSide, .leftSide{
+        width:100%;
+    }
+    .rightSide{
+        padding-right: 0;
+        overflow: hidden;
+    }
+    .rightSide img{
+        width: 80%;
+    }
+    #navBar{
+        padding: 5px;
+        height: 6vh;
+    }
+    #navBar h2{
+        margin-left: 10px;
+        font-size: 18px;
+    }
+    #navBar ul{
+        gap: 10px;
+        padding: 2px;
+    }
+    #navBar ul li{
+        width: 80px;
+        text-align: center;
+        padding: 3px 5px;
+        font-size: 15px;
+    }
+    .btn{
+        width: 150px;
+    }
+}
+@media (max-width:500px){
+    .btn{
+        width: 130px;
+
+    }
+    #navBar{
+        display: block;
+        height: 63px;
+        padding: 10px 0;
+        overflow: hidden;
+    }
+    #navBar h2{
+        max-width:100%;
+        text-align: center;
+        margin: 2px 0;
+        font-size: 18px;
+    }
+    #navBar ul{
+        width: 100%;
+        clear: both;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 0;
+    }
+    #navBar ul li{
+        margin: 0 2px;
+        width: 70px;
+        padding: 2px 4px;
+        font-size: 13px;
+    }
+    .leftSide .content{
+        padding: 20px 0;
+    }
+}
